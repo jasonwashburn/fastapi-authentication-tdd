@@ -1,8 +1,6 @@
 tasks:
-  - name: "Create venv and install requirements"
-    init: "python3 -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt"
-  - name: "Activate Virtual Environment"
-    command: "source .venv/bin/activate"
+  - name: "Install requirements"
+    init: "pip install -r requirements.txt"
 
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
 # ports:
